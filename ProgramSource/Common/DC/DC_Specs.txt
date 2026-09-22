@@ -1,0 +1,6 @@
+DTDCSpecSheet,version=3.0:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=2263842	DC Specs															
+																
+			Selectors			Continuity			PS_Short			BasicLevels				
+	Symbol	Value	Nom	LV	HV	Typ	Min	Max	Typ	Min	Max	Typ	Min	Max	Comment	
+	VCC	#N/A	Typ	Min	Max	0	0	0	0.2	0.2	0.2	=3*V	=1*V	=5*V	Digital supply level	
+	VOH_OUT	#N/A	Typ	Min	Max	0	0	0	0	0	0	=2.1*V	=0.7*V	=3.5*V	Scan Out VOH	

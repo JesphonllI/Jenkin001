@@ -1,0 +1,148 @@
+# This file was generated on 06/07/22 at 17:56:56.
+
+#TesterConfig.txt loaded from: C:\Program Files (x86)\Teradyne\IG-XL\10.30.05_uflx\tester\PhysicalConfig.txt
+
+# In order to load this configuration information in a pre-3.64.50
+# version of IG-XL, it must be converted to the version 0 format.
+# To convert this file from version 1 to version 0:
+#	1. Make a backup of this file.
+#	2. Copy the information between the tags <TEST_HEAD TH 1> and </TEST_HEAD TH 1>,
+#	   paste it into a new file, and save that file as SimulatedConfig.txt in the current test program's directory.
+
+<Version>
+1
+</Version>
+
+<Configuration>
+UltraFLEXplus
+</Configuration>
+
+<TESTER_INFO TI 1>
+TESTER SERIAL NUMBER: 1625A00
+TESTER PRODUCTION NUMBER: T2-UFLX2-D13
+TESTER PART NUMBER: 633-723-00
+PTL PART NUMBER: 633-699-00
+PTL SERIAL NUMBER: 1704A00
+IG-XL VERSION: 10.30.05_uflx
+IG-XL BUILD: 06.03.22.02.36
+CONFIG DATE: 06/07/22
+CONFIG TIME: 17:56:54
+</TESTER_INFO TI 1>
+
+<TEST_HEAD TH 1>
+#slot[.subslot]	Type		idprom (type serial rev company)
+
+3.0		VS-800mA		630-035-30 C38FFA9 1817-A 5445
+   		Communications		625-388-11 C398168 1733-A 5445
+   		PowerBoard		627-392-11 C38F8C9 1724-A 5445
+   		Midplane		625-390-00 341B1AF 1546-A 5445
+3.1		VS64x3V800mA		627-000-30 C3983A1 1729-A 5445
+3.2		VS64x3V800mA		627-000-30 C39839E 1729-A 5445
+3.3		VS64x3V800mA		627-000-30 C398399 1729-A 5445
+3.4		VS64x3V800mA		627-000-30 C39839C 1729-A 5445
+5.0		VS-5A		630-036-20 301EA7B 1546-A 5445
+   		Communications		625-388-10 3414FB5 1546-A 5445
+   		PowerBoard		627-393-11 3418E10 1603-A 5445
+   		Midplane		625-390-00 341962D 1546-A 5445
+5.1		VS16x2p8V5A		627-001-20 C37A23A 1638-A 5445
+5.2		VS16x2p8V5A		627-001-20 C37A2FF 1638-A 5445
+5.3		VS16x2p8V5A		627-001-20 C37A238 1638-A 5445
+5.4		VS16x2p8V5A		627-001-20 C37A23B 1638-A 5445
+15.0		HSDP		625-393-51 C38FDE1 1815-A 5445
+    		Communications		639-977-10 C3989E9 1815-A 5445
+    		PowerBoard		624-697-01 341C6C9 1713-A 5445
+    		Midplane		625-390-00 341074B 1546-A 5445
+15.1		HSDPModule		627-352-41 C3988E7 1750-A 5445
+15.2		HSDPModule		627-352-41 C3988E5 1750-A 5445
+15.3		HSDPModule		627-352-41 C3988F5 1750-A 5445
+15.4		HSDPModule		627-352-41 C3988E2 1750-A 5445
+16.0		HSDP		625-393-51 C38FF97 1843-A 5445
+    		Communications		639-977-10 C39918F 1815-A 5445
+    		PowerBoard		624-697-01 C3914F0 1730-A 5445
+    		Midplane		625-390-00 C390040 1623-A 5445
+16.1		HSDPModule		627-352-41 C3985F2 1843-A 5445
+16.2		HSDPModule		627-352-41 C3988FF 1843-A 5445
+16.3		HSDPModule		627-352-41 C387A97 1843-A 5445
+16.4		HSDPModule		627-352-41 C3988F2 1843-A 5445
+17.0		HSDP		625-393-51 C394C52 1815-A 5445
+    		Communications		639-977-10 C3862B2 1815-A 5445
+    		PowerBoard		624-697-01 34195F6 1549-A 5445
+    		Midplane		625-390-00 3419FDB 1546-A 5445
+17.1		HSDPModule		627-352-41 C387A87 1750-A 5445
+17.2		HSDPModule		627-352-41 C387A95 1750-A 5445
+17.3		HSDPModule		627-352-41 C387A83 1750-A 5445
+17.4		HSDPModule		627-352-41 C387A84 1750-A 5445
+19.0		HSDP		625-393-51 C3C2864 1931-A 5445
+    		Communications		639-977-11 C3B7654 1849-A 5445
+    		PowerBoard		624-697-01 C3BE5F2 1730-A 5445
+    		Midplane		625-390-00 C3BF6BD 1853-A 5445
+19.1		HSDPModule		627-352-41 C3B76D9 1849-A 5445
+19.2		HSDPModule		627-352-41 C3B75F1 1849-A 5445
+19.3		HSDPModule		627-352-41 C3B743A 1849-A 5445
+19.4		HSDPModule		627-352-41 C3B742A 1849-A 5445
+48.0		Support		639-209-02 C39DF6A 1936-A 5445
+    		SupportPA		638-561-02 C39B2E7 1828-A 5445
+    		TimingCal		638-557-01 C39A935 1742-A 5445
+48.1		DCCal		639-210-01 900CE2B 1720-A 5445
+48.5		Distribution		630-926-00 900CDA6 1604-A 5445
+48.6		Distribution		630-926-00 900CDA6 1604-A 5445
+48.7		Distribution		630-925-01 C38DA2B 1710-A 5445
+48.8		Distribution		630-925-01 900CDB8 1604-A 5445
+#66.0		DibSupport		632-860-20 900CDB3 1634-A 5445
+#    		DibSupportModule1		629-667-10 3419248 1543-A 5445
+#    		DibSupportModule2		629-667-10 3419249 1543-A 5445
+#100.0		VirtualDSPBrd		624-103-21 2345678 1639-A 5445
+#     		VirtualDSPBrd		624-103-21 2345678 1639-A 5445
+</TEST_HEAD TH 1>
+
+<CABLE_CONNECTIONS>
+634-050-05     a      21     100      a      21     100
+634-050-05     a      21     200      a      21     200
+634-050-05     a      21     300      a      21     300
+634-050-05     a      21     400      a      21     400
+634-050-01     a      8      100      a      18     100
+634-050-01     a      8      200      a      18     200
+634-050-01     a      8      300      a      18     300
+634-050-01     a      8      400      a      18     400
+633-939-01     a      3      100      a      11     100
+633-939-01     a      3      200      a      11     200
+633-939-01     a      3      300      a      11     300
+633-939-01     a      3      400      a      11     400
+633-939-01     a      5      100      a      13     100
+633-939-01     a      5      200      a      13     200
+633-939-01     a      5      300      a      13     300
+633-939-01     a      5      400      a      13     400
+634-050-01     a      15     100      a      15     100
+634-050-01     a      15     200      a      15     200
+634-050-01     a      15     300      a      15     300
+634-050-01     a      15     400      a      15     400
+634-050-01     a      17     100      a      17     100
+634-050-01     a      17     200      a      17     200
+634-050-01     a      17     300      a      17     300
+634-050-01     a      17     400      a      17     400
+634-050-05     a      19     100      a      19     100
+634-050-05     a      19     200      a      19     200
+634-050-05     a      19     300      a      19     300
+634-050-05     a      19     400      a      19     400
+634-050-05     a      16     100      a      22     100
+634-050-05     a      16     200      a      22     200
+634-050-05     a      16     300      a      22     300
+634-050-05     a      16     400      a      22     400
+661-756-00     j13    48     100      a      25     200
+661-756-00     j14    48     200      a      25     200
+661-756-00     j15    48     300      a      25     200
+661-755-00     j16    48     400      a      25     300
+661-755-00     j17    48     500      a      25     300
+661-755-00     j51    48     9100     a      25     300
+661-756-01     j5     66     1100     a      24     200
+661-756-01     j28    66     1400     a      24     200
+661-756-01     j29    66     1500     a      24     200
+661-756-04     j7     66     600      a      25     400
+661-756-04     j10    66     900      a      25     400
+661-756-04     j11    66     1000     a      25     400
+661-755-03     j8     66     700      a      25     100
+661-755-03     j9     66     800      a      25     100
+661-755-03     j53    66     9300     a      25     100
+661-757-02     j24    66     1200     a      24     300
+661-757-02     j27    66     1300     a      24     300
+</CABLE_CONNECTIONS>

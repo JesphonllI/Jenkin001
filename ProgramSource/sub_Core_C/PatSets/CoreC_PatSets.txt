@@ -1,0 +1,18 @@
+DTPatternSetSheet,version=2.3:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=11186720	Pattern Sets								
+									
+	Pattern Set	Time Domain	Enable	File/Group Name	Burst	Start Label	Stop Label	Comment	
+	CoreC_F1			.\Patterns\Func_C1.patx	yes				
+	CoreC_F1			.\Patterns\Func_C2.patx	yes				
+	CoreC_F1			.\Patterns\Func_C3.patx	yes				
+	CoreC_F1			.\Patterns\Func_C4.patx	yes				
+	CoreC_F1			.\Patterns\Func_C5.patx	yes				
+	CoreC_F2			.\Patterns\Func_C1.patx	yes				
+	CoreC_F2			.\Patterns\Func_C2.patx	yes				
+	CoreC_F2			.\Patterns\Func_C3.patx	yes				
+	CoreC_F2			.\Patterns\Func_C4.patx	yes				
+	CoreC_F2			.\Patterns\Func_C5.patx	yes				
+	CoreC_F3			.\Patterns\Func_C1.patx	yes				
+	CoreC_F3			.\Patterns\Func_C2.patx	yes				
+	CoreC_F3			.\Patterns\Func_C3.patx	yes				
+	CoreC_F3			.\Patterns\Func_C4.patx	yes				
+	CoreC_F3			.\Patterns\Func_C5.patx	yes				

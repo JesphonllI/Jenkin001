@@ -1,0 +1,11 @@
+DTLevelSheet,version=2.1:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=9498256	Pin Levels					
+						
+	Pin/Group	Seq.	Parameter	Value	Comment	
+	DIG_ALL		Vil	=_VCC*0.2		
+	DIG_ALL		Vih	=_VCC*0.8		
+	DIG_ALL		Vol	=_VCC*0.3		
+	DIG_ALL		Voh	=_VOH_OUT		
+	DIG_ALL		Vt	=_VCC*0.5		
+	DIG_ALL		Vcl	=_Vcl_default		
+	DIG_ALL		Vch	=_Vch_default		
+	DIG_ALL		DriverMode	Largeswing-Hiz		

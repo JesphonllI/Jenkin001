@@ -1,0 +1,20 @@
+DTFlowtableSheet,version=3.0:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=3291030	Flow Table																																					
+						Flow Domain:																																
+			Gate			Command				Limits		Datalog Display Results			Bin Number		Sort Number			Action			Group				Device			Debug		CT Profile Data						
+	Label	Enable	Job	Part	Env	Opcode	Parameter	TName	TNum	LoLim	HiLim	Scale	Units	Format	Pass	Fail	Pass	Fail	Result	Pass	Fail	State	Specifier	Sense	Condition	Name	Sense	Condition	Name	Assume	Sites	Elapsed Time (s)	Background Type	Serialize	Resource Lock	Flow Step Locked	Comment	
+						nop																																
+						Test	Dig_Conty																															
+						Use-Limit		Contact-Source	1000	-0.8	-0.2		Volts			9		98	Fail																			
+						Use-Limit		Contact-Sink	1100	0.2	0.8		Volts			9		98	Fail																			
+						nop																																
+						Test	PS_Shorts																															
+						Use-Limit		PS Shorts	1200	-0.05	0.05		Amp			9		97	Fail																			
+						nop																																
+						nop																																
+						Test	BasicFunc_FuncT	Basic Func FuncT	10000							9		90	Fail																			
+						Test	BasicFunc_VBT	Basic Func VBT	10100							9		90	Fail																			
+						nop																																
+						Test	ScanFLush_FuncT	Scan Flush FuncT	20000							9		91	Fail																			
+						Test	ScanFLush_VBT	Scan Flush VBT	20100							9		91	Fail																			
+						nop																																
+						return																																

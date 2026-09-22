@@ -1,0 +1,9 @@
+DTACSpecSheet,version=3.0:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=8388608	AC Specs									
+										
+			Selectors			BasicTimings				
+	Symbol	Value	Nom	Fast	Slow	Typ	Min	Max	Comment	
+	t_period	#N/A	Typ	Min	Max	=200*ns	=100*ns	=500*ns		
+	tpw_data	#N/A	Typ	Min	Max	=0.5 * _t_period	=0.5 * _t_period	=0.5 * _t_period		
+	t_stb_data	#N/A	Typ	Min	Max	=0.5*_t_period	=0.5*_t_period	=0.5*_t_period		
+	t_data_off	#N/A	Typ	Min	Max	=_t_data_on+_tpw_data	=_t_data_on+_tpw_data	=_t_data_on+_tpw_data		
+	t_data_on	#N/A	Typ	Min	Max	=0.25 * _t_period	=0.25 * _t_period	=0.25 * _t_period		

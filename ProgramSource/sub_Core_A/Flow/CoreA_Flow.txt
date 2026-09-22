@@ -1,0 +1,16 @@
+DTFlowtableSheet,version=3.0:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=139	Flow Table																																					
+						Flow Domain:																																
+			Gate			Command				Limits		Datalog Display Results			Bin Number		Sort Number			Action			Group				Device			Debug		CT Profile Data						
+	Label	Enable	Job	Part	Env	Opcode	Parameter	TName	TNum	LoLim	HiLim	Scale	Units	Format	Pass	Fail	Pass	Fail	Result	Pass	Fail	State	Specifier	Sense	Condition	Name	Sense	Condition	Name	Assume	Sites	Elapsed Time (s)	Background Type	Serialize	Resource Lock	Flow Step Locked	Comment	
+						nop																																
+						Test	CoreA_P1_NOM_NOM	A:P1 Nom-Nom	100100							2		20	Fail																			
+						Test	CoreA_P2_NOM_NOM	A:P2 Nom-Nom	100200							2		20	Fail																			
+						Test	CoreA_P3_NOM_NOM	A:P3 Nom-Nom	100300							2		20	Fail																			
+						nop																																
+						Test	CoreA_P1_LV_FAST	A:P1 LV-Fast	110100							2		21	Fail																			
+						Test	CoreA_P2_LV_FAST	A:P2 LV-Fast	110200							2		21	Fail																			
+						Test	CoreA_P3_LV_FAST	A:P3 LV-Fast	110300							2		21	Fail																			
+						nop																																
+						nop																																
+						nop																																
+						return																																

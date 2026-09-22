@@ -1,0 +1,39 @@
+DTChanMap,version=2.6:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:dataformat=pogo2:tabcolor=12632256	Channel Map								
+									
+	DIB ID:			View Mode:	Signal				
+	USL Tag:								
+	Device Under Test		Tester Channel						
+	Pin Name	Package Pin	Type	Site 0	Site 1	Site 2	Site 3	Comment	
+	Si0		I/O	15.g302	15.a486	15.g102	15.a286		
+	So0		I/O	15.e302	15.c486	15.e102	15.c286		
+	Si1		I/O	15.g304	15.a484	15.g104	15.a284		
+	So1		I/O	15.e304	15.c484	15.e104	15.c284		
+	Si2		I/O	15.g306	15.a482	15.g106	15.a282		
+	So2		I/O	15.e306	15.c482	15.e106	15.c282		
+	Si3		I/O	15.g308	15.a480	15.g108	15.a280		
+	So3		I/O	15.e308	15.c480	15.e108	15.c280		
+	Si4		I/O	15.g313	15.a475	15.g113	15.a275	15.1ch16	
+	So4		I/O	15.e313	15.c475	15.e113	15.c275	15.1ch17	
+	Si5		I/O	15.g315	15.a473	15.g115	15.a273	15.1ch18	
+	So5		I/O	15.e315	15.c473	15.e115	15.c273	15.1ch19	
+	Si6		I/O	15.g317	15.a471	15.g117	15.a271	15.1ch20	
+	So6		I/O	15.e317	15.c471	15.e117	15.c271	15.1ch21	
+	Si7		I/O	15.g319	15.a469	15.g119	15.a269	15.1ch22	
+	So7		I/O	15.e319	15.c469	15.e119	15.c269	15.1ch23	
+	P0		I/O	15.g324	15.a464	15.g124	15.a264		
+	P1		I/O	15.e324	15.c464	15.e124	15.c264		
+	P2		I/O	15.g326	15.a462	15.g126	15.a262		
+	P3		I/O	15.e326	15.c462	15.e126	15.c262		
+	P4		I/O	15.g328	15.a460	15.g128	15.a260		
+	P5		I/O	15.e328	15.c460	15.e128	15.c260		
+	P6		I/O	15.g330	15.a458	15.g130	15.a258		
+	P7		I/O	15.e330	15.c458	15.e130	15.c258		
+	P8		I/O	15.g335	15.a453	15.g135	15.a253		
+	P9		I/O	15.e335	15.c453	15.e135	15.c253		
+	P10		I/O	15.g337	15.a451	15.g137	15.a251		
+	P11		I/O	15.e337	15.c451	15.e137	15.c251		
+	P12		I/O	15.g339	15.a449	15.g139	15.a249		
+	P13		I/O	15.e339	15.c449	15.e139	15.c249		
+	P14		I/O	15.g341	15.a447	15.g141	15.a247		
+	P15		I/O	15.e341	15.c447	15.e141	15.c247		
+	VCC		DCVS	11.e334	11.c454	11.e134	11.c254		

@@ -1,0 +1,96 @@
+DTPinMap,version=2.1:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1:tabcolor=6908265	Pin Map				
+			USL Tag:		
+	Group Name	Pin Name	Type	Comment	
+		SI0	I/O		
+		SO0	I/O		
+		SI1	I/O		
+		SO1	I/O		
+		SI2	I/O		
+		SO2	I/O		
+		SI3	I/O		
+		SO3	I/O		
+		SI4	I/O		
+		SO4	I/O		
+		SI5	I/O		
+		SO5	I/O		
+		SI6	I/O		
+		SO6	I/O		
+		SI7	I/O		
+		SO7	I/O		
+		P0	I/O		
+		P1	I/O		
+		P2	I/O		
+		P3	I/O		
+		P4	I/O		
+		P5	I/O		
+		P6	I/O		
+		P7	I/O		
+		P8	I/O		
+		P9	I/O		
+		P10	I/O		
+		P11	I/O		
+		P12	I/O		
+		P13	I/O		
+		P14	I/O		
+		P15	I/O		
+		VCC	Power		
+	P_ALL	P0	I/O		
+	P_ALL	P1			
+	P_ALL	P2			
+	P_ALL	P3			
+	P_ALL	P4			
+	P_ALL	P5			
+	P_ALL	P6			
+	P_ALL	P7			
+	P_ALL	P8			
+	P_ALL	P9			
+	P_ALL	P10			
+	P_ALL	P11			
+	P_ALL	P12			
+	P_ALL	P13			
+	P_ALL	P14			
+	P_ALL	P15			
+	CHAIN0	SI0	I/O		
+	CHAIN0	SO0			
+	CHAIN1	SI1	I/O		
+	CHAIN1	SO1			
+	CHAIN2	SI2	I/O		
+	CHAIN2	SO2			
+	CHAIN3	SI3	I/O		
+	CHAIN3	SO3			
+	CHAIN4	SI4	I/O		
+	CHAIN4	SO4			
+	CHAIN5	SI5	I/O		
+	CHAIN5	SO5			
+	CHAIN6	SI6	I/O		
+	CHAIN6	SO6			
+	CHAIN7	SI7	I/O		
+	CHAIN7	SO7			
+	SI_ALL	SI0	I/O		
+	SI_ALL	SI1			
+	SI_ALL	SI2			
+	SI_ALL	SI3			
+	SI_ALL	SI4			
+	SI_ALL	SI5			
+	SI_ALL	SI6			
+	SI_ALL	SI7			
+	SO_ALL	SO0	I/O		
+	SO_ALL	SO1			
+	SO_ALL	SO2			
+	SO_ALL	SO3			
+	SO_ALL	SO4			
+	SO_ALL	SO5			
+	SO_ALL	SO6			
+	SO_ALL	SO7			
+	SCAN_ALL	CHAIN0	I/O		
+	SCAN_ALL	CHAIN1			
+	SCAN_ALL	CHAIN2			
+	SCAN_ALL	CHAIN3			
+	SCAN_ALL	CHAIN4			
+	SCAN_ALL	CHAIN5			
+	SCAN_ALL	CHAIN6			
+	SCAN_ALL	CHAIN7			
+	DIG_ALL	P_ALL	I/O		
+	DIG_ALL	SCAN_ALL			
+	Scan_TD	SCAN_ALL	TimeDomain		
+	Par_TD	P_ALL	TimeDomain		
