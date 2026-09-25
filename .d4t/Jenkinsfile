@@ -1,0 +1,21 @@
+pipeline {
+    agent {
+        label 'igxl'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'echo Jenkins Pipeline is working!'
+                bat 'java -version'
+                bat 'git --version'
+            }
+        }
+    }
+}
