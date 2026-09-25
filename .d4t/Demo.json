@@ -1,0 +1,438 @@
+{
+  "Version": "1.1.0",
+  "Settings": {
+    "EMAILS": "austin.yang@teradyne.com",
+    "CONFIG_FILE": ".d4t\\DUT123_Project.json",
+    "OutputDir": "output"
+  },
+  "Agents": [
+    {
+      "Name": "NewAgent1",
+      "Label": "",
+      "SystemCheck": false,
+      "Enabled": true,
+      "SCMProtocol": "HTTPS",
+      "Resource": {
+        "Host": ""
+      },
+      "SoftwareKits": [],
+      "SessionNames": "",
+      "SetupNames": ""
+    }
+  ],
+  "IGLink": {
+    "Setups": [
+      {
+        "SetupName": "Setup1",
+        "Default": true,
+        "ProjectFile": "..\\DUT123.igxlProj",
+        "WorkBookName": "DUT123",
+        "JobName": "",
+        "CompileDotNetLibs": false,
+        "IGXLOutputFileName": ""
+      },
+      {
+        "SetupName": "NewSetup1",
+        "Default": false,
+        "CompileDotNetLibs": false
+      }
+    ],
+    "Command": "d4tCLI iglink --configfile="
+  },
+  "IGReview": {
+    "Setups": [
+      {
+        "SetupName": "Setup1",
+        "ProjectFile": ".\\DUT123.igreviewCfg",
+        "WorkBookFile": "..\\DUT123.igxl",
+        "OutputFile": "IG-Review-DUT123.xlsx",
+        "JobNames": "JobA,JobB",
+        "Platform": "UltraFLEX",
+        "DateStampOutput": true,
+        "Default": true
+      }
+    ],
+    "Command": "d4tCLI igreview --configfile="
+  },
+  "IGBenchmark": {
+    "ProjectFile": ".\\DUT123-Benchmark.json",
+    "Command": "d4tCLI igbenchmark --configfile=",
+    "Artifacts": "*.json,*.log,*.txt,*.xlsx,*.dat,*.std",
+    "SessionArtifacts": [],
+    "Coverage": {
+      "ReportTypes": "HTML",
+      "TargetFiles": "MergedAssemblies_*",
+      "Enable": true
+    },
+    "DebugRun": false
+  },
+  "Analyzers": {
+    "GoldenDataPath": ".\\GoldenData",
+    "DatalogSummaryAnalyzer": {
+      "Enabled": true,
+      "Command": "d4tCLI dlogsummary --configfile=",
+      "Rules": [
+        {
+          "SessionName": "",
+          "JobName": "",
+          "TestNumber": -1,
+          "TestName": "",
+          "ResultType": 2,
+          "Mode": 1,
+          "Value": 10
+        }
+      ],
+      "BinRules": [
+        {
+          "SessionName": "",
+          "JobName": "",
+          "Name": "Bin_Pass",
+          "BinSortType": 1,
+          "Ignore": false,
+          "ResultType": 1,
+          "Mode": 1,
+          "Value": 8
+        }
+      ],
+      "Exclusions": [
+        {
+          "SessionPattern": "Debug*",
+          "JobPattern": "*",
+          "RunIDPattern": "*",
+          "ChanmapPattern": "*",
+          "Comments": "Debug sessions are not validated"
+        }
+      ],
+      "ExpectedBins": []
+    },
+    "IGCorrelate": {
+      "Enabled": true,
+      "ConfigFile": ".\\DUT123-CorrelationConfig.json",
+      "IGCorrAdditionalArgs": "",
+      "STDFStatsAdditionalArgs": "-s -i 0 -f 2 -m 0",
+      "SessionConfigs": [
+        {
+          "SessionName": "JobB",
+          "ConfigFile": "",
+          "IGCorrAdditionalArgs": "-a",
+          "STDFStatsAdditionalArgs": ""
+        }
+      ],
+      "Command": "d4tCLI igcorrelate --configfile=",
+      "Artifacts": "*.csv,*.json,*.xlsm,*.std"
+    },
+    "TTAnalyzer": {
+      "Enabled": true,
+      "Command": "d4tCLI ttanalyzer --configfile=",
+      "OpenReportOnComplete": false,
+      "Exclusions": [],
+      "Sessions": []
+    }
+  },
+  "Configurations": {
+    "PatternSetups": []
+  },
+  "Dashboard": {
+    "BuildCount": 5,
+    "TopRecordsCount": 20,
+    "DisableJsonCompression": false,
+    "AdditionalArgs": "",
+    "BuildsDir": "",
+    "EnableCustomPlugins": false,
+    "PluginConfigs": [],
+    "GoodHardwareBins": [
+      1
+    ]
+  },
+  "ProgressTracker": {
+    "Settings": {
+      "ProjectName": "DUT123",
+      "StartDate": "2026-02-18T00:00:00",
+      "PointsPerWeek": 0
+    },
+    "Performance": {
+      "PTETarget": 98,
+      "PSOTarget": 0
+    },
+    "Quality": {
+      "LineCoverageTarget": 0,
+      "IGCorrelateQScore": 95,
+      "MethodCoverageTarget": 0,
+      "BranchCoverageTarget": 0
+    },
+    "TestTargets": [
+      {
+        "TestBlock": "CONT",
+        "TestInstance": "Dig_Conty",
+        "Points": 1,
+        "TestTimeTarget": 0.02,
+        "ProjectedTestCount": 64,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_A",
+        "TestInstance": "A:P1",
+        "Points": 5,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 2,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_A",
+        "TestInstance": "A:P2",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 2,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_A",
+        "TestInstance": "A:P3",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 2,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_B",
+        "TestInstance": "B:P1",
+        "Points": 5,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_B",
+        "TestInstance": "B:P2",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_B",
+        "TestInstance": "B:P3",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_C",
+        "TestInstance": "C:P1",
+        "Points": 5,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_C",
+        "TestInstance": "C:P2",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "CORE_C",
+        "TestInstance": "C:P3",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 3,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "FUNC",
+        "TestInstance": "BasicFunc_FuncT",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 1,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "FUNC",
+        "TestInstance": "BasicFunc_VBT",
+        "Points": 2,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 1,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "IDD",
+        "TestInstance": "MeasureCurrent_NET",
+        "Points": 3,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 32,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "PS_SHORT",
+        "TestInstance": "PS_Shorts",
+        "Points": 1,
+        "TestTimeTarget": 0.0050000000000000001,
+        "ProjectedTestCount": 1,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "SCAN",
+        "TestInstance": "ScanFLush_FuncT",
+        "Points": 3,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 1,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      },
+      {
+        "TestBlock": "SCAN",
+        "TestInstance": "ScanFLush_VBT",
+        "Points": 3,
+        "TestTimeTarget": 0.002,
+        "ProjectedTestCount": 1,
+        "Insertions": [
+          {
+            "InsertionName": "JobA",
+            "Selected": true
+          },
+          {
+            "InsertionName": "JobB",
+            "Selected": true
+          }
+        ]
+      }
+    ]
+  }
+}
